@@ -6,7 +6,7 @@ import (
 	"gorm.io/gorm"
 )
 
-type Order struct {
+type OrderService struct {
 	gorm.Model
 	UserID      uint        `json:"user_id"`
 	TotalAmount float64     `json:"total_amount"`

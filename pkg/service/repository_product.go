@@ -1,6 +1,6 @@
 package service
 
-type Repository interface {
+type ProductRepository interface {
 	CreateProduct(product *ProductService) error
 	GetAllProducts() ([]ProductService, error)
 	GetProductByID(id uint) (*ProductService, error)
